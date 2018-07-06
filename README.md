@@ -1,36 +1,38 @@
 # spool-runkit
 
-[![NPM version][npm-image]][npm-url]
-[![Build status][ci-image]][ci-url]
+[![Gitter][gitter-image]][gitter-url]
+[![Build Status][ci-image]][ci-url]
+[![Test Coverage][coverage-image]][coverage-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
-[![Code Climate][codeclimate-image]][codeclimate-url]
+[![Follow @FabrixApp on Twitter][twitter-image]][twitter-url]
 
 RunKit Spool
 
 ## Install
 
 ```sh
-$ npm install --save spool-runkit
+$ npm install --save @fabrix/spool-runkit
 ```
 
 ## Configure
 
 ```js
 // config/main.js
-module.exports = {
-  packs: [
+export const main = {
+  spools: [
     // ... other spools
-    require('spool-runkit')
+    require('@fabrix/spool-runkit').RunkitSpool
   ]
 }
 ```
 
-[npm-image]: https://img.shields.io/npm/v/spool-runkit.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/spool-runkit
-[ci-image]: https://img.shields.io/travis/fabrixjs/spool-runkit/master.svg?style=flat-square
-[ci-url]: https://travis-ci.org/fabrixjs/spool-runkit
-[daviddm-image]: http://img.shields.io/david/fabrixjs/spool-runkit.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/fabrixjs/spool-runkit
-[codeclimate-image]: https://img.shields.io/codeclimate/github/fabrixjs/spool-runkit.svg?style=flat-square
-[codeclimate-url]: https://codeclimate.com/github/fabrixjs/spool-runkit
-
+[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/spool-runkit/master.svg
+[ci-url]: https://circleci.com/gh/fabrix-app/spool-runkit/tree/master
+[daviddm-image]: http://img.shields.io/david/fabrix-app/spool-runkit.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/fabrix-app/spool-runkit
+[gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
+[gitter-url]: https://gitter.im/fabrix-app/fabrix
+[twitter-image]: https://img.shields.io/twitter/follow/FabrixApp.svg?style=social
+[twitter-url]: https://twitter.com/FabrixApp
+[coverage-image]: https://img.shields.io/codeclimate/coverage/github/fabrix-app/spool-runkit.svg?style=flat-square
+[coverage-url]: https://codeclimate.com/github/fabrix-app/spool-runkit/coverage
